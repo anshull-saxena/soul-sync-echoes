@@ -11,6 +11,9 @@ import CompanionBuilder from "./pages/CompanionBuilder";
 import ChatPage from "./pages/ChatPage";
 import PremiumPage from "./pages/PremiumPage";
 import NotFound from "./pages/NotFound";
+import AboutPage from "./pages/AboutPage";
+import PrivacyPage from "./pages/PrivacyPage";
+import TermsPage from "./pages/TermsPage";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +30,9 @@ const App = () => (
               <Route path="/create" element={<CompanionBuilder />} />
               <Route path="/chat" element={<ChatPage />} />
               <Route path="/premium" element={<PremiumPage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="/terms" element={<TermsPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Layout>
